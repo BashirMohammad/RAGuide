@@ -23,6 +23,8 @@ Each folder should have a “main” file that calls the other scripts/functions
 
 Beyond the “master code” already mentioned, ideally, a code directory would contain a “ReadMe.pdf” that describes briefly the codes and their connection, as well as the conclusions met and the main evidence found. Even though Github stores all the versions of our code, it is useful to keep at least the last version of the code in an “Archive” folder, to avoid going through the different versions of Git. If you use generic auxiliary functions in many of your codes, they should go in an “AuxFunctions” folder. The following picture illustrates an example directory:
 
+![alt text](Figures/ExampleDir.png "ExampleDir")
+
 ## Project Manual
 
 ## Version Control
