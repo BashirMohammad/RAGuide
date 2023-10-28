@@ -1,3 +1,3 @@
 (Code)=
 # CODE
-Here we explain best practices to read good reproducible code.
+Here we explain best practices to write good reproducible code.
