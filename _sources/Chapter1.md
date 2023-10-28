@@ -41,3 +41,4 @@ Nobody really sticks to these fully, but everyone should be striving to adhere t
 10. [R](https://www.r-project.org)
 11. [R Studio](https://rstudio.com)
 
+
