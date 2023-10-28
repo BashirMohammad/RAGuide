@@ -380,6 +380,13 @@ document.write(`
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modifying-files">Modifying Files</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-modified-files">Committing Modified Files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unmodifying-a-modified-file">Unmodifying a Modified File</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-your-remotes">Pushing to Your Remotes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-repo">Creating a Repo</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-empty-repo">Creating an Empty Repo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-existing-project-to-your-new-repo">Adding an Existing Project to Your New Repo</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -469,16 +476,66 @@ $<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </spa
 <span class="w">   </span>$<span class="w"> </span>git<span class="w"> </span>status
 </pre></div>
 </div>
-<p>Don’t worry about the branch message yet, we’ll see what that is in section 10.5.1Git Branching. GitHub realizes that your local repo is different from your working directory, it realized that you made changes to the “AllReaders.tex” file and shows it under “Changes to be committed.” Our first goal is to make sure that your local repo also saves those changes (we’ll take care of the remote repo in the next section). You first need to tell GitHub what documents you want to save the changes in the local repo with the following command:
-$ git add “AllReaders.tex”
-Now run git status again and you’ll see:</p>
+<p>Don’t worry about the branch message yet, we’ll see what that is in section 10.5.1Git Branching. GitHub realizes that your local repo is different from your working directory, it realized that you made changes to the “AllReaders.tex” file and shows it under “Changes to be committed.” Our first goal is to make sure that your local repo also saves those changes (we’ll take care of the remote repo in the next section). You first need to tell GitHub what documents you want to save the changes in the local repo with the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span><span class="s2">&quot;AllReaders.tex&quot;</span>
+</pre></div>
+</div>
+<p>Now run git status again and you’ll see:</p>
 </section>
 <section id="committing-modified-files">
 <h3>Committing Modified Files<a class="headerlink" href="#committing-modified-files" title="Permalink to this heading">#</a></h3>
 <p>AllReaders.tex is now under the “Changes to be committed.” This basically means you told GitHub you want to save the changes made to it. Next, we need to “commit” those changes. Committing is telling GitHub to take a snapshot of your project in the working directory and save it to your local repository. In other words, you are saving your latest changes to the git repo. See here for more details. The command to commit changes is:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span>−m<span class="w"> </span><span class="s2">&quot;A message explaining your changes to the project &quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span>git<span class="w"> </span>commit<span class="w"> </span>−m<span class="w"> </span><span class="s2">&quot;A message explaining your changes to the project &quot;</span>
 </pre></div>
 </div>
+</section>
+<section id="unmodifying-a-modified-file">
+<h3>Unmodifying a Modified File<a class="headerlink" href="#unmodifying-a-modified-file" title="Permalink to this heading">#</a></h3>
+<p>If you accidentally modified a file, or regretted the changes, and wants to revert it back to how it was when you last committed (the local repo’s last snapshot), you can run the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$git</span><span class="w"> </span>checkout<span class="w"> </span>−<span class="w"> </span>&lt;file<span class="w"> </span>&gt;
+</pre></div>
+</div>
+<p>However, be careful, the changes you had made and not committed will be completely deleted.</p>
+</section>
+<section id="pushing-to-your-remotes">
+<h3>Pushing to Your Remotes<a class="headerlink" href="#pushing-to-your-remotes" title="Permalink to this heading">#</a></h3>
+<p>So you have already (i) cloned all the data from the remote repo and created a local repo; (ii) mod- ified your working directory (e.g. your code) and (iii) added and committed your changes from your working directory to your local repo (the .git repository). We’ll now update your changes to the remote repo. This can be done with the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$git</span><span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>master<span class="w"> </span>Or<span class="w"> </span>more<span class="w"> </span>generally
+<span class="w">   </span><span class="nv">$git</span><span class="w"> </span>push<span class="w"> </span>&lt;remote&gt;<span class="w"> </span>&lt;branch&gt;
+</pre></div>
+</div>
+<p>“origin” is the automatic name that GitHub assigns to the remote repository. “master” is the branch in the remote repo, but don’t worry about it yet, it will make sense after we see 10.5.1 Git Branching. Git push uploads the changes from your local repo to your remote repo. Now your working directory, your local repo and your remote repo are all on the same stage.</p>
+</section>
+<section id="creating-a-repo">
+<h3>Creating a Repo<a class="headerlink" href="#creating-a-repo" title="Permalink to this heading">#</a></h3>
+<section id="creating-an-empty-repo">
+<h4>Creating an Empty Repo<a class="headerlink" href="#creating-an-empty-repo" title="Permalink to this heading">#</a></h4>
+<p>In the last section we saw how to clone a repo, make changes to your local repo and push it back to the remote. In this section we will simply see how to create an empty remote repo, then you can follow the workflow from Section 3 to add your files to it.</p>
+<ol class="arabic simple">
+<li><p>Go to GitHub’s website and login</p></li>
+<li><p>On any page, click the + button on the upper right part of the screen and then click on “New repository.”</p></li>
+<li><p>Choose the name of your repo and click Create repository. For more options, see this.</p></li>
+</ol>
+</section>
+<section id="adding-an-existing-project-to-your-new-repo">
+<h4>Adding an Existing Project to Your New Repo<a class="headerlink" href="#adding-an-existing-project-to-your-new-repo" title="Permalink to this heading">#</a></h4>
+<p>To add an existing project to the new remote repo, we will first create a local repo, add the existing project to it, commit the changes and push it to the empty remote repo.</p>
+<ol class="arabic simple">
+<li><p>Change the current working directory to the desired local’s project dir.</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$cd</span><span class="w"> </span>/Users/username/newrepo
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Initialize a local git repository in your current directory. $git init</p></li>
+<li><p>Add the files for your new repo.</p></li>
+<li><p>Commit the new files, which creates a snapshot of how they are now and save it to the local repo</p></li>
+<li><p>Go back to your remote repo on GitHub’s website and copy the remote repository URL.</p></li>
+<li><p>: Add the new remote repo from your terminal $git remote add origin <remote repository URL></p></li>
+<li><p>Your local repo is now connected to your remote repo. Push your changes to your remote repo as we saw in 10.3.5 Pushing to Your Remotes.
+For more details and options, see this.</p></li>
+</ol>
+</section>
 </section>
 </section>
 </section>
@@ -551,6 +608,13 @@ Now run git status again and you’ll see:</p>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modifying-files">Modifying Files</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-modified-files">Committing Modified Files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unmodifying-a-modified-file">Unmodifying a Modified File</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-to-your-remotes">Pushing to Your Remotes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-repo">Creating a Repo</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-an-empty-repo">Creating an Empty Repo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-an-existing-project-to-your-new-repo">Adding an Existing Project to Your New Repo</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

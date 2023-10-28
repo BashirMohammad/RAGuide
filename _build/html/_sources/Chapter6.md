@@ -67,12 +67,46 @@ If you open the new GitShortIntro directory, you’ll see that there are only tw
    $ git status
 ```
 Don’t worry about the branch message yet, we’ll see what that is in section 10.5.1Git Branching. GitHub realizes that your local repo is different from your working directory, it realized that you made changes to the “AllReaders.tex” file and shows it under “Changes to be committed.” Our first goal is to make sure that your local repo also saves those changes (we’ll take care of the remote repo in the next section). You first need to tell GitHub what documents you want to save the changes in the local repo with the following command:
+```bash
 $ git add "AllReaders.tex"
+```
 Now run git status again and you’ll see:
 
 ### Committing Modified Files
 AllReaders.tex is now under the “Changes to be committed.” This basically means you told GitHub you want to save the changes made to it. Next, we need to “commit” those changes. Committing is telling GitHub to take a snapshot of your project in the working directory and save it to your local repository. In other words, you are saving your latest changes to the git repo. See here for more details. The command to commit changes is:
 
 ```bash
-git commit −m "A message explaining your changes to the project "
+   git commit −m "A message explaining your changes to the project "
 ```
+### Unmodifying a Modified File
+If you accidentally modified a file, or regretted the changes, and wants to revert it back to how it was when you last committed (the local repo’s last snapshot), you can run the following command:
+```bash
+   $git checkout − <file >
+```
+However, be careful, the changes you had made and not committed will be completely deleted.
+### Pushing to Your Remotes
+So you have already (i) cloned all the data from the remote repo and created a local repo; (ii) mod- ified your working directory (e.g. your code) and (iii) added and committed your changes from your working directory to your local repo (the .git repository). We’ll now update your changes to the remote repo. This can be done with the following command:
+```bash
+   $git push origin master Or more generally
+   $git push <remote> <branch>
+```   
+“origin” is the automatic name that GitHub assigns to the remote repository. “master” is the branch in the remote repo, but don’t worry about it yet, it will make sense after we see 10.5.1 Git Branching. Git push uploads the changes from your local repo to your remote repo. Now your working directory, your local repo and your remote repo are all on the same stage.
+### Creating a Repo
+#### Creating an Empty Repo
+In the last section we saw how to clone a repo, make changes to your local repo and push it back to the remote. In this section we will simply see how to create an empty remote repo, then you can follow the workflow from Section 3 to add your files to it.
+1. Go to GitHub’s website and login
+2. On any page, click the + button on the upper right part of the screen and then click on “New repository.”
+3. Choose the name of your repo and click Create repository. For more options, see this.
+#### Adding an Existing Project to Your New Repo
+To add an existing project to the new remote repo, we will first create a local repo, add the existing project to it, commit the changes and push it to the empty remote repo.
+1. Change the current working directory to the desired local’s project dir. 
+```bash
+   $cd /Users/username/newrepo
+   ```
+2. Initialize a local git repository in your current directory. $git init
+3. Add the files for your new repo.
+4. Commit the new files, which creates a snapshot of how they are now and save it to the local repo
+5. Go back to your remote repo on GitHub’s website and copy the remote repository URL.
+6. : Add the new remote repo from your terminal $git remote add origin <remote repository URL>
+7. Your local repo is now connected to your remote repo. Push your changes to your remote repo as we saw in 10.3.5 Pushing to Your Remotes.
+For more details and options, see this.
