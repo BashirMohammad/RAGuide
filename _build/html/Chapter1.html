@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>How to Get Stuff Done :A Handbook for Research Assistants (and Coauthors) &#8212; My sample book</title>
+    <title>GETTING STARTED &#8212; My sample book</title>
   
   
   
@@ -62,10 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Chapter1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="GETTING STARTED" href="Chapter1.html" />
+    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="How to Get Stuff Done :A Handbook for Research Assistants (and Coauthors)" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -140,7 +141,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -160,14 +161,14 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     How to Get Stuff Done :A Handbook for Research Assistants (and Coauthors)
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Chapter1.html">GETTING STARTED</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">GETTING STARTED</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
@@ -243,7 +244,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FChapter1.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -273,7 +274,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Chapter1.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -355,7 +356,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>How to Get Stuff Done :A Handbook for Research Assistants (and Coauthors)</h1>
+    <h1>GETTING STARTED</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,7 +366,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-manual">1.1 How To Use This Manual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commandments-for-productive-coding">1.2 Commandments for Productive Coding</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-guide">2. Setup Guide</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#first-things-first">2.1 First Things First</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-tools">2.2 The Tools</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -377,23 +387,58 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="how-to-get-stuff-done-a-handbook-for-research-assistants-and-coauthors">
-<h1>How to Get Stuff Done :A Handbook for Research Assistants (and Coauthors)<a class="headerlink" href="#how-to-get-stuff-done-a-handbook-for-research-assistants-and-coauthors" title="Permalink to this heading">#</a></h1>
-<p><strong>Michael Carlos Best</strong><br />
-<strong>Luigi Caloi</strong><br />
-<em>November 2023</em></p>
-<p>This handbook is intended to get everyone aquainted with the tools I use in my research and the workflow of using them. Many thanks to Owen Zidar for sharing his materials, from which this handbook borrows heavily. This document is a work in progress, please contribute to it if you find additional resources that are helpful.</p>
-<section id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Chapter1.html">GETTING STARTED</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mymarkdownfile.html">Here’s my sample title</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="getting-started">
+<h1>GETTING STARTED<a class="headerlink" href="#getting-started" title="Permalink to this heading">#</a></h1>
+<section id="introduction">
+<h2>1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>This document serves multiple purposes. As an onboarding guide for new research assistants, its aim is to introduce the research tools I use and how to get started with these tools. I also try to describe a standard for good research habits. As a reference manual, this document serves as a resource and first line of defense for when questions arise.</p>
+<section id="how-to-use-this-manual">
+<h3>1.1 How To Use This Manual<a class="headerlink" href="#how-to-use-this-manual" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Read the Table of Contents to learn what’s covered in the handbook and where to find it.</p></li>
+<li><p>Read the Setup Guide and follow the instructions in first things first.</p>
+<ul class="simple">
+<li><p>Read Gentzkow &amp; Shapiro, Code and Data for the Social Sciences (<span class="xref myst">html</span>) (<span class="xref myst">pdf</span>)</p></li>
+<li><p>Complete the steps to set up each of the tools.</p></li>
 </ul>
-</div>
+</li>
+<li><p>In the future, when you have questions, start by looking back here for answers.</p></li>
+</ol>
+</section>
+<section id="commandments-for-productive-coding">
+<h3>1.2 Commandments for Productive Coding<a class="headerlink" href="#commandments-for-productive-coding" title="Permalink to this heading">#</a></h3>
+<p>Nobody really sticks to these fully, but everyone should be striving to adhere to the following three principles. The more you stick to them, the more productive and efficient we can be.</p>
+<ol class="arabic simple">
+<li><p><strong>Don’t Repeat Yourself:</strong> Put your work in a place where you can find it later. Turn repetitive tasks into functions and groups of repetitive tasks into modules. Write code that writes code.</p></li>
+<li><p><strong>Plan to Rewrite:</strong> Rewriting is a fact of life. Fix “broken windows” now. Expect to rewrite and reorganize code as projects evolve. Don’t plan to “come back and tidy that up later”, do it now before moving on to something else.</p></li>
+<li><p><strong>Write Code that Others Can Read and Use:</strong> For all code you write, adhere to a consistent set of readability rules. Add in more comments than you think are necessary; others (including your future self) will thank you!</p></li>
+</ol>
+</section>
+</section>
+<section id="setup-guide">
+<h2>2. Setup Guide<a class="headerlink" href="#setup-guide" title="Permalink to this heading">#</a></h2>
+<section id="first-things-first">
+<h3>2.1 First Things First<a class="headerlink" href="#first-things-first" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Do some of the recommended readings in chapter 20, especially Gentzkow &amp; Shapiro’s Code and Data for the Social Sciences (<span class="xref myst">html</span>) (<span class="xref myst">pdf</span>). Pay close attention to their guidelines regarding code style, documentation, version control, and task management.</p></li>
+</ol>
+</section>
+<section id="the-tools">
+<h3>2.2 The Tools<a class="headerlink" href="#the-tools" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Dropbox</p></li>
+<li><p>Github</p></li>
+<li><p>Github Desktop</p></li>
+<li><p>VeraCrypt</p></li>
+<li><p>Trello</p></li>
+<li><p>LaTeX</p></li>
+<li><p>LyX</p></li>
+<li><p>Atom and Sublime</p></li>
+<li><p>Stata</p></li>
+<li><p>R</p></li>
+<li><p>R Studio</p></li>
+</ol>
+</section>
 </section>
 </section>
 
@@ -427,12 +472,21 @@ document.write(`
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">How to Get Stuff Done :A Handbook for Research Assistants (and Coauthors)</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="Chapter1.html"
+       href="markdown.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">GETTING STARTED</p>
+        <p class="prev-next-title">Markdown Files</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -451,7 +505,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contents">Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">1. Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-manual">1.1 How To Use This Manual</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commandments-for-productive-coding">1.2 Commandments for Productive Coding</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-guide">2. Setup Guide</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#first-things-first">2.1 First Things First</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-tools">2.2 The Tools</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
