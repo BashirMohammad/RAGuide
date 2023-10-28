@@ -9,7 +9,7 @@ This document serves multiple purposes. As an onboarding guide for new research 
 
 1. Read the Table of Contents to learn what’s covered in the handbook and where to find it.
 2. Read the Setup Guide and follow the instructions in first things first.
-   - Read Gentzkow & Shapiro, Code and Data for the Social Sciences ([html](link-to-html)) ([pdf](link-to-pdf))
+   - Read Gentzkow & Shapiro, [Code and Data for the Social Sciences](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) [Download](pdf/CodeAndData.pdf)
    - Complete the steps to set up each of the tools.
 3. In the future, when you have questions, start by looking back here for answers.
 
@@ -29,14 +29,16 @@ Nobody really sticks to these fully, but everyone should be striving to adhere t
 
 ### 2.2 The Tools
 
-1. Dropbox
-2. Github
-3. Github Desktop
-4. VeraCrypt
-5. Trello
-6. LaTeX
-7. LyX
-8. Atom and Sublime
-9. Stata
-10. R
-11. R Studio
+1. [Dropbox](https://www.dropbox.com)
+2. [Github](https://github.com)
+3. [Github Desktop](https://desktop.github.com)
+4. [VeraCrypt](https://www.veracrypt.fr/en/Home.html)
+5. [Trello](https://trello.com)
+6. [LaTeX](https://overleaf.com)
+7. [LyX](https://www.lyx.org)
+8. [Atom](https://atom.io) and [Sublime Text](https://www.sublimetext.com)
+9. [Stata](https://www.stata.com)
+10. [R](https://www.r-project.org)
+11. [R Studio](https://rstudio.com)
+
+

@@ -163,7 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    How to Get Stuff Done :A Handbook for Research Assistants (and Coauthors)
+                    How to Get Stuff Done : A Handbook for Research Assistants (and Coauthors)
                 </a>
             </li>
         </ul>
@@ -174,6 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Chapter4.html">General Principles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Chapter5.html">Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Chapter6.html">TOOLS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Chapter7.html">RESOURCES</a></li>
 </ul>
 
     </div>
@@ -397,16 +398,19 @@ document.write(`
 <h3>Folder Organization<a class="headerlink" href="#folder-organization" title="Permalink to this heading">#</a></h3>
 <section id="assignment-folders-dropbox-vs-github">
 <h4>Assignment Folders Dropbox vs Github<a class="headerlink" href="#assignment-folders-dropbox-vs-github" title="Permalink to this heading">#</a></h4>
-<p>The difference between Github and Dropbox will become clearer after section 10 Github, but we should note a few things beforehand. The two are fundamentally different in their purposes: Dropbox is great at storing huge amounts of data in the cloud, while Github excels at storing multiple versions of your code. In practice, this means that you will have a Dropbox folder with all your data and one Github folder with all your codes. Your plots, pictures, and tables can go in either.</p>
+<p>The difference between Github and Dropbox will become clearer after <a class="reference internal" href="Chapter6.html#tools-github"><span class="std std-ref">Github</span></a>, but we should note a few things beforehand. The two are fundamentally different in their purposes: Dropbox is great at storing huge amounts of data in the cloud, while Github excels at storing multiple versions of your code. In practice, this means that you will have a Dropbox folder with all your data and one Github folder with all your codes. Your plots, pictures, and tables can go in either.</p>
+<p>Currently, we prefer to create an organization in GitHub that manages entire project. You can have one repository for analysis and then a final repository called writing that only stores your final tex code for presentation, paper, final graphs and tables. We will explain this in detail in <a class="reference internal" href="Chapter3.html#code"><span class="std std-ref">Code</span></a> and <a class="reference internal" href="Chapter6.html#tools"><span class="std std-ref">Tools</span></a>.</p>
+<p>&lt;! Add here new a bit on new details–&gt;</p>
 </section>
 <section id="make-files">
 <h4>Make Files<a class="headerlink" href="#make-files" title="Permalink to this heading">#</a></h4>
-<p>Each folder should have a “main” file that calls the other scripts/functions from the folder. A folder can quickly grow into having multiple files, and the master file should help one to figure out the connections between them, e.g., in what order each file should be called. An example in Stata:
-<img alt="alt text" src="_images/MainFile.png" /></p>
+<p>Each folder should have a “main” file that calls the other scripts/functions from the folder. A folder can quickly grow into having multiple files, and the master file should help one to figure out the connections between them, e.g., in what order each file should be called. An example in Stata:</p>
+<p><img alt="alt text" src="_images/MainFile.png" /></p>
 </section>
 <section id="example-directory">
 <h4>Example Directory<a class="headerlink" href="#example-directory" title="Permalink to this heading">#</a></h4>
 <p>Beyond the “master code” already mentioned, ideally, a code directory would contain a “ReadMe.pdf” that describes briefly the codes and their connection, as well as the conclusions met and the main evidence found. Even though Github stores all the versions of our code, it is useful to keep at least the last version of the code in an “Archive” folder, to avoid going through the different versions of Git. If you use generic auxiliary functions in many of your codes, they should go in an “AuxFunctions” folder. The following picture illustrates an example directory:</p>
+<p><img alt="alt text" src="_images/ExampleDir.png" /></p>
 </section>
 </section>
 </section>

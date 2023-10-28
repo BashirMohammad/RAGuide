@@ -1,2 +1,5 @@
+
 # General Principles
-What are general principles for applid microeconomics.
+
+What are general principles to good applied economics research.
+
