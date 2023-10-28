@@ -1,5 +1,1 @@
 # CODE
-
-# General Principles
-
-# Data
