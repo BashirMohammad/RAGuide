@@ -9,7 +9,7 @@ This document serves multiple purposes. As an onboarding guide for new research 
 
 1. Read the Table of Contents to learn what’s covered in the handbook and where to find it.
 2. Read the Setup Guide and follow the instructions in first things first.
-   - Read Gentzkow & Shapiro, Code and Data for the Social Sciences ([html](link-to-html)) ([pdf](link-to-pdf))
+   - Read Gentzkow & Shapiro, [Code and Data for the Social Sciences](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) (pdf/CodeAndData.pdf)
    - Complete the steps to set up each of the tools.
 3. In the future, when you have questions, start by looking back here for answers.
 
