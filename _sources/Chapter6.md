@@ -282,3 +282,5 @@ I would specially recommend looking into the courses [Writing Functions in R](ht
 ### Using R for geospatial tasks
 R has some great packages that you can use if you have geospatial tasks that you need to do, such as making maps. One of the best packages for working with geospatial data (importing shapefiles, plotting features, etc) is the sf package. Here’s a great resource for dipping your feet into and hopefully mastering geocomputation in R: https://geocompr.robinlovelace.net/intro.html
 If you’re trying to make interactive maps that you can pan around and zoom into, make sure you check out section 8.4 of the book attached above!
+
+
