@@ -1,11 +1,13 @@
-# Welcome to your Jupyter Book
+# How to Get Stuff Done :A Handbook for Research Assistants (and Coauthors)
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+**Michael Carlos Best**  
+**Luigi Caloi**  
+*July 30, 2019*
 
-Check out the content pages bundled with this sample book to see more.
+
+This handbook is intended to get everyone aquainted with the tools I use in my research and the workflow of using them. Many thanks to Owen Zidar for sharing his materials, from which this handbook borrows heavily. This document is a work in progress, please contribute to it if you find additional resources that are helpful.
+
+## Contents
 
 ```{tableofcontents}
 ```
