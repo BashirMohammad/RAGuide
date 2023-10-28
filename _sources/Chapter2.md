@@ -7,7 +7,11 @@
 
 #### Assignment Folders Dropbox vs Github
 
-The difference between Github and Dropbox will become clearer after section 10 Github, but we should note a few things beforehand. The two are fundamentally different in their purposes: Dropbox is great at storing huge amounts of data in the cloud, while Github excels at storing multiple versions of your code. In practice, this means that you will have a Dropbox folder with all your data and one Github folder with all your codes. Your plots, pictures, and tables can go in either.
+The difference between Github and Dropbox will become clearer after [Github](Tools:Github), but we should note a few things beforehand. The two are fundamentally different in their purposes: Dropbox is great at storing huge amounts of data in the cloud, while Github excels at storing multiple versions of your code. In practice, this means that you will have a Dropbox folder with all your data and one Github folder with all your codes. Your plots, pictures, and tables can go in either.
+
+Currently, we prefer to create an organization in GitHub that manages entire project. You can have one repository for analysis and then a final repository called writing that only stores your final tex code for presentation, paper, final graphs and tables. We will explain this in detail in [Code](Code) and [Tools](Tools). 
+
+<! Add here new a bit on new details-->
 
 #### Make Files
 

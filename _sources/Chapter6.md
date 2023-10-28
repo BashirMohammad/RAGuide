@@ -1,7 +1,8 @@
+(Tools)=
 # TOOLS
 
 ## Dropbox
-
+(Tools:Github)=
 ## Github
 
 Github is a version control system. To get started, all you need to do is get a free account on their website [Github](https://github.com/). You can probably also get a free account upgrade by requesting an upgrade as a student or researcher. Here are some online resources to help you get started. Please let me know if you find more/better ones.
