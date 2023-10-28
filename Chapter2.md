@@ -12,6 +12,7 @@ The difference between Github and Dropbox will become clearer after section 10 G
 #### Make Files
 
 Each folder should have a “main” file that calls the other scripts/functions from the folder. A folder can quickly grow into having multiple files, and the master file should help one to figure out the connections between them, e.g., in what order each file should be called. An example in Stata:
+![alt text](Figures/MainFile.png "STATA Master File")
 
 #### Example Directory
 
