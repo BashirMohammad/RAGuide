@@ -10,17 +10,16 @@ parts:
 - caption: Part II WORKFLOW
   chapters:
   - file: Chapter2.md
-  -caption: Part III CODE
+- caption: Part III CODE
   chapters:
   - file: Chapter3.md
   - file: Chapter4.md
-  - file: Chapter5.md
 - caption: Part IV TOOLS
   chapters:
-  - file: Chapter6.md
+  - file: Chapter5.md
 - caption: Part V RESOURCES
   chapters:
-  - file: Chapter7.md
+  - file: Chapter6.md
 - caption: End Matter
   chapters:
   - file: acknowledgements.md
