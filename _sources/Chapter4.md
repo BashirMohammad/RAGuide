@@ -1,5 +1,7 @@
 
-# General Principles
+# Data
 
-What are general principles to good applied economics research.
+
+How to do good data analysis?
+
 
