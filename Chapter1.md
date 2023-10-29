@@ -25,7 +25,7 @@ Nobody really sticks to these fully, but everyone should be striving to adhere t
 
 ### 2.1 First Things First
 
-1. Do some of the recommended readings in chapter 20, especially Gentzkow & Shapiro’s Code and Data for the Social Sciences ([html](link-to-html)) ([pdf](link-to-pdf)). Pay close attention to their guidelines regarding code style, documentation, version control, and task management.
+1. Do some of the recommended readings in chapter 20, especially Read Gentzkow & Shapiro, [Code and Data for the Social Sciences](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) [PDF](pdf/CodeAndData.pdf). Pay close attention to their guidelines regarding code style, documentation, version control, and task management.
 
 ### 2.2 The Tools
 
@@ -40,5 +40,7 @@ Nobody really sticks to these fully, but everyone should be striving to adhere t
 9. [Stata](https://www.stata.com)
 10. [R](https://www.r-project.org)
 11. [R Studio](https://rstudio.com)
+
+
 
 

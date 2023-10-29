@@ -1,4 +1,8 @@
-(Code)=
-# CODE
 
-Here we explain best practices to write good reproducible code.
+
+# General Principles
+
+What are general principles to good applied economics research.
+
+
+

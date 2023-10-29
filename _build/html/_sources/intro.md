@@ -1,7 +1,9 @@
-# How to Get Stuff Done : A Handbook for Research Assistants (and Coauthors)
+# How to Get Stuff Done : A Handbook for Research Assistants and Coauthors
 
-**Michael Carlos Best**  
-**Luigi Caloi**  
+[**Michael Carlos Best**](https://blogs.cuit.columbia.edu/mcb2270/)
+
+[**Luigi Caloi**](https://econ.columbia.edu/econpeople/luigi-beneduci-caloi/)
+
 *Version: November 2023*
 
 
@@ -11,3 +13,6 @@ This handbook is intended to get everyone aquainted with the tools I use in my r
 
 ```{tableofcontents}
 ```
+
+
+

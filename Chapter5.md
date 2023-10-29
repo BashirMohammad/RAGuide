@@ -5,7 +5,7 @@
 (Tools:Github)=
 ## Github
 
-Github is a version control system. To get started, all you need to do is get a free account on their website [Github](https://github.com/). You can probably also get a free account upgrade by requesting an upgrade as a student or researcher. Here are some online resources to help you get started. Please let me know if you find more/better ones.
+Github is a version control system. To get started, all you need to do is get a free account on their website [Github](https://github.com/). You can also get a free account upgrade by requesting an upgrade as a student or researcher using your edu email. Here are some online resources to help you get started. Please let me know if you find more/better ones.
 
 - [Open Science MOOC - Module 5: Open Research Software and Open Source](https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source/blob/ma)
 - [GitHub for Portfolios](https://dannguyen.github.io/github-for-portfolios/lessons/clone-github-pages-repo/)
@@ -221,7 +221,7 @@ VeraCrypt is an open source drive encryption tool. Often, our projects work with
 You can download the tool here: https://www.veracrypt.fr/en/Home.html. JPAL has written a useful guide to how to use it: https://www.povertyactionlab.org/sites/default/files/A%20guide- to-VeraCrypt-Installation-and-Demo_Sep-2016.pdf and, even better, a stata module that can inter- act with it directly: https://github.com/J-PAL/VeraCrypt (or type ssc install veracrypt in stata)
 
 ## Trello
-Trello is an intutive tool to organize teamwork, so you should have no problem to start using straight away. Nonetheless, this short and practical tutorial can be a useful resource. It is also important to note that our team follows a pattern for our Trello boards, illustrated in this sample board.
+Trello is an intutive tool to organize teamwork, so you should have no problem to start using straight away. Nonetheless, [this](https://trello.com/b/I7TjiplA/trello-tutorial) short and practical tutorial can be a useful resource. It is also important to note that our team follows a pattern for our Trello boards, illustrated in this sample board.
 
 ## Latex
 
@@ -282,5 +282,6 @@ I would specially recommend looking into the courses [Writing Functions in R](ht
 ### Using R for geospatial tasks
 R has some great packages that you can use if you have geospatial tasks that you need to do, such as making maps. One of the best packages for working with geospatial data (importing shapefiles, plotting features, etc) is the sf package. Here’s a great resource for dipping your feet into and hopefully mastering geocomputation in R: https://geocompr.robinlovelace.net/intro.html
 If you’re trying to make interactive maps that you can pan around and zoom into, make sure you check out section 8.4 of the book attached above!
+
 
 
