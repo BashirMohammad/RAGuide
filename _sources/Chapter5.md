@@ -5,7 +5,7 @@
 (Tools:Github)=
 ## Github
 
-Github is a version control system. To get started, all you need to do is get a free account on their website [Github](https://github.com/). You can also get a free account upgrade by requesting an upgrade as a student or researcher using your edu email. Here are some online resources to help you get started. Please let me know if you find more/better ones.
+Github is a version control system. To get started, all you need to do is get a free account on their website [Github](https://github.com/). You can also get a free account upgrade by requesting an upgrade as a student or researcher using your edu email. Here are some online resources to help you get started. Please let us know if you find more/better ones.
 
 - [Open Science MOOC - Module 5: Open Research Software and Open Source](https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source/blob/ma)
 - [GitHub for Portfolios](https://dannguyen.github.io/github-for-portfolios/lessons/clone-github-pages-repo/)
