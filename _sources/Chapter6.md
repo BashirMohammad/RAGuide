@@ -5,7 +5,7 @@
 
 1. Gentzkow & Shapiro’s [Code and Data for the Social Sciences](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) [Download](pdf/CodeAndData.pdf)
 2. [Kieran Healy’s The Plain Person’s Guide to Plain Text Social Science](https://plain-text.co/) [Download](pdf/plain-person-text.pdf)
-3. Read this excellent [Coding for Economists](https://aeturrell.github.io/coding-for-economists/intro.html) by Arthur Turrell. He importantly talks about best coding practices and how to move to Python from STATA. 
+3. Read this excellent book [Coding for Economists](https://aeturrell.github.io/coding-for-economists/intro.html) by Arthur Turrell. He importantly talks about best coding practices and how to move to Python from STATA. 
 
 ## Online Resources
 
