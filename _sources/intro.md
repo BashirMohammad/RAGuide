@@ -1,4 +1,4 @@
-# How to Get Stuff Done : A Handbook for Research Assistants (and Coauthors)
+# How to Get Stuff Done : A Handbook for Research Assistants and Coauthors
 
 **Michael Carlos Best**  
 **Luigi Caloi**  
