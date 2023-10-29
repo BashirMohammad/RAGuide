@@ -1,0 +1,25 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: Part I GETTING STARTED
+  chapters:
+  - file: Chapter1.md
+- caption: Part II WORKFLOW
+  chapters:
+  - file: Chapter2.md
+- caption: Part III CODE
+  chapters:
+  - file: Chapter3.md
+  - file: Chapter4.md
+- caption: Part IV TOOLS
+  chapters:
+  - file: Chapter5.md
+- caption: Part V RESOURCES
+  chapters:
+  - file: Chapter6.md
+- caption: End Matter
+  chapters:
+  - file: acknowledgements.md
