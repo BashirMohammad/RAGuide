@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This document serves multiple purposes. As an onboarding guide for new research assistants, its aim is to introduce the research tools I use and how to get started with these tools. I also try to describe a standard for good research habits. As a reference manual, this document serves as a resource and first line of defense for when questions arise.
+This document serves multiple purposes. As an onboarding guide for new research assistants, its aim is to introduce the research tools I use and how to get started with these tools. I also try to describe a standard for good research habits. As a reference manual, this document serves as a resource and first line of defense when questions arise.
 
 ### How To Use This Manual
 
