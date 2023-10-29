@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This document serves multiple purposes. As an onboarding guide for new research assistants, its aim is to introduce the research tools I use and how to get started with these tools. I also try to describe a standard for good research habits. As a reference manual, this document serves as a resource and first line of defense for when questions arise.
+This document serves multiple purposes. As an onboarding guide for new research assistants, its aim is to introduce the research tools I use and how to get started with these tools. I also try to describe a standard for good research habits. As a reference manual, this document serves as a resource and first line of defense when questions arise.
 
 ### How To Use This Manual
 
-1. Read the Table of Contents to learn what’s covered in the handbook and where to find it.
+1. Read the Table of Contents to learn what’s covered in the handbook and where to find it. For detailed contents, go to relevant chapter and look at table of contents to the right side of the page.
 2. Read the Setup Guide and follow the instructions in first things first.
    - Read Gentzkow & Shapiro, [Code and Data for the Social Sciences](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) [Download](pdf/CodeAndData.pdf)
    - Complete the steps to set up each of the tools.

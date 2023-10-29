@@ -30,3 +30,6 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  page_toc_levels: 3  # Adjust the number as needed
+  use_page_toc_button: true
+
