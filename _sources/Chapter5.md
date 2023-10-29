@@ -184,7 +184,7 @@ The centralized workflow is the simplest and the easiest to transition for who�
 ![](Figures/CentralizedWorkflow.png)
 Despite its simplicity, the centralized workflow with Git already offers some advantages compared to other repository systems:
 1. Independence: it allows each developer/researcher to work independently on the same project. E.g. you can work in the same .do file (or other code) as another colleague with- out worrying if DropBox will mess up the changes made by both of you.
-2. Controlwhilemerging:mergingtworesearcher’sworkismucheasier,becauseGitprovides a useful merge conflict functionality that allows one to see what parts of the code of each researcher need to be fixed in a merge.
+2. Control while merging:merging two researchers’ work is much easier,because Git provides a useful merge conflict functionality that allows one to see what parts of the code of each researcher need to be fixed in a merge.
 3. Control in updating: it allows one to control when he/she wants to share the changes in his/her code. I.e. while a code that is stored in DropBox is constantly being synced and up- dated to everyone, in Git you gain more control by making edits to the code in your computer (local repo) and deciding when to push the changes to the remote repo.
 4. Safety: it gives every developer their own local copy of the entire project’s history.
 ### Feature Branch Workflow
