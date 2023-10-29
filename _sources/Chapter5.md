@@ -180,6 +180,7 @@ Branching and merging allow us to understand better what was going on with the p
 There are several types of workflow in Git, many of which we indirectly covered in the previous sections. Here I’ll focus on the (i) Centralized Workflow and (ii) Feature Branch Workflow, but for a bigger variety of workflows and more details please read Getting Git Right’s tutorial, [Comparing workflows](https://www.atlassian.com/git/tutorials/comparing-workflows).
 ### Centralized Workflow
 The centralized workflow is the simplest and the easiest to transition for who’s been using Drop- Box. The idea is quite simple: the entire project has only one branch, the master branch, which all changes are committed into. This branch serves as central repository and you “push” your changes similarly to when you want sync your code to the DropBox folder.
+
 ![](Figures/CentralizedWorkflow.png)
 Despite its simplicity, the centralized workflow with Git already offers some advantages com- pared to other repository systems:
 1. Independence: it allows each developer/researcher to work independently on the same project. E.g. you can work in the same .do file (or other code) as another colleague with- out worrying if DropBox will mess up the changes made by both of you.
