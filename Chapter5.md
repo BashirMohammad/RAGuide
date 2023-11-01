@@ -3,6 +3,10 @@
 # TOOLS
 
 ## Dropbox
+Dropbox excels at handling vast quantities of data, images, and tables, providing a swift and seamless synchronization experience, even for sizable project folders. However, its live synchronization can lead to conflicts if multiple users attempt simultaneous edits. In contrast, GitHub, with its integrated version control system, stands out for managing code and documents, allowing uploads to the cloud only when you have a finalized version ready. We currently keep our data on Dropbox, while our code, along with the final versions of images and tables, are maintained on GitHub.
+
+
+
 (Tools:Github)=
 ## Github
 
@@ -253,6 +257,30 @@ usability of Sublime, getting to know them will speed up a lot of the coding in 
 
 Sublime can be pretty good with [shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html). The most useful for me from the list are Command J to transform multiple lines into a single one and the “split window” command. On a similar note, Sublime allows for [column selection](https://www.sublimetext.com/docs/column_selection.html), which can be particularly useful for selecting and writing at multiple lines.
 
+### Visual Studio Code
+Visual Studio Code (VSCode) is a versatile and lightweight code editor developed by Microsoft, available for Windows, macOS, and Linux. It supports a wide array of programming languages and comes with a rich set of features including syntax highlighting, IntelliSense (auto-completion of code), debugging support, and embedded Git control. Users can customize its functionality and appearance with extensions, enhancing its capabilities to suit their specific workflow and preferences. Its user-friendly interface, combined with powerful coding tools, makes VSCode a popular choice among developers for writing, navigating, and debugging code efficiently. Additionally, its integration with version control systems and a variety of programming languages streamlines the development process, making it a comprehensive tool for both beginners and experienced programmers. Below we describe some important uses of VSCode. 
+
+You can download VSCode from https://code.visualstudio.com/. Among its many benefits, you can open an entire folder inside it and see all files including pdfs, images, markdown, tex, stata dofiles, Jupyter Notebook, and R files. For instance, below is an example of repository of this book open in VSCode:
+![](Figures/VSCodeExample.png)
+
+Once you install VSCode, you will first need to install some important extensions that will help you do different tasks. Below we describe some important tasks you can do inside VSCode and their extensions.
+#### Writing STATA Code in VSCode
+First in order to run STATA inside VSCode, you need to install three extensions `Stata Enhanced`, `Stata language` and `stataRun`. Importantly, follow details at https://marketplace.visualstudio.com/items?itemName=Yeaoh.stataRun on how to set up STATA on VSCode. Note that you need to go to shortcuts of the VSCode and then search `stata run` and then choose your shortcut key that sends VSCode to STATA. When you need to write a dofile in VSCode, simply open a new file and while saving choose its extension `.do`. You will notice that with `Stata Enhanced`, the autocompletion and auto-generation of comments on your STATA code will be super accurate. 
+
+
+
+#### GitHub Integration
+First you go to bottom left corner and sign in your GitHub on VSCode. It will take you to GitHub website and you just need to approve it. Once you have GitHub connected with VSCode, you can push/pull the same way you do with GitHub Desktop by going to the third icon on the left called `Source Control`. This functionality of VSCode essentially replaces GitHub Desktop as you no longer need a separate app tp push or pull from GitHub cloud.
+![](Figures/GithubonVSCode.png)
+Next you need to install extension for GitHub Copilot that lets you chat with AI bot from inside the CSCode. This is similar to ChatGPT and is free on GitHub education pro account. If you have an `edu` email, request a free GitHub pro account at https://education.github.com/pack. After this you need to request access to GitHub copilot at https://github.com/features/copilot. To learn more details about how to use this copilot, read https://paulgp.substack.com/p/setting-up-github-copilot-and-vscode. Below is an example chat with Copilot:
+
+![](Figures/CopilotExample.png)
+
+
+
+
+
+(Tools:STATA)=
 ## STATA 
 ### Large datasets: Gtools, Ftools and reghdfe
 If you are working with large datasets, the [Gtools](https://gtools.readthedocs.io/en/latest/) and [Ftools](https://github.com/sergiocorreia/ftools) are community-contributed packages that perform common Stata commands much quicker, such as collapse, reshape, merge egen and more. Gtools is generally even quicker than the Ftools, so if the same command is availble on both packages I usually go with the Gtools option.
@@ -269,8 +297,81 @@ When generating LaTex files, it will save you a lot of time if the output of you
 - **Exporting a single summary statistic**: Let’s say that in your paper you refer to the result of a regression multiple times. In this case, it might be useful to “synch” that statistic–the result of your important regression–with your .tex file, otherwise you’ll have to manually edit the .tex file every time. Please see the “Simple statistic” section of this [link]
 (https://www.nickeubank.com/exporting-results-stata-latex/).
 
+### Using File Command
+`file` is most flexible STATA command to write into a file including word, excel and Latex. This is specifically useful when you need to create a table with very complex stracture. Consider for example you want to create following table:
+![](Figures/SummaryStatsTable.png)
+First go to https://www.tablesgenerator.com/ and there you design your table as you would do in excel. Then, you choose your format of table such as booktabs and then generate Latex code for that table. Now you would have code for empty table and you go into STATA and start writing dofile by first loading the data
+```bash
+clear all
+version 16
+**++++++ THIS CODE GENERATES SUMMARY STATISTICS OF AUDIT ASSIGNMENT FOR PAKISTAN AUDIT PROJECT+++++ **
+* DATE: 5th FEBRUARY, 2023
+
+*** Reading audit data
+use				"${project_data}/ParametricAudits_RiskScore_v3.dta", clear
+duplicates drop regno, force				// Only keep one line per firm as we want to count firms.
+```
+Now you use file command and start writing `.tex` code for your table that was generated from table generator website
+```bash
+** Define Latex Code for the Summary Statistics Table
+capture		file close myfile
+file 		open myfile using "${project_tabs}/AuditDescriptives.tex", write replace
+file 		write myfile "\setlength{\arrayrulewidth}{0.5mm}" _n
+
+file		write myfile "\begin{tabular}{@{}cccccc@{}}" _n
+file		write myfile "\toprule" _n
+file		write myfile "\toprule" _n
+file 		write myfile "\multirow{2}{*}{Audit} & \multirow{2}{*}{Ballot Date} & \multirow{2}{*}{Exclusions} & \multicolumn{3}{c}{Audits Assigned} \\ " _n
+file 		write myfile "\cmidrule(l){4-6}"	_n
+file 		write myfile "Wave &Date & & Mode   & Statutory Rate   & Number  \\ " _n
+
+file 		write myfile "\midrule "	_n
+// file 		write myfile " &   & & Mode   & Statuary Rate   & Number   \\" _n
+file 		write myfile "(1) & (2)  & (3) & (4)    & (5)& (6)    \\"		_n
+file		write myfile "\midrule" _n
+
+```
+Here `_n` defines new line for Latex Code. Whatever comes after `file write myfile` inside the quotes will be written into the tex file called `AuditDescriptives.tex`. Now you need to fill in summary statistics into this and we usually use locals to store statistics before writing onto the `.tex` file such as 
+```bash
+***		Start populating the table
+* Wave-1
+count 		if assign1==1 
+local 		assign1= r(N)
+file write myfile "1&Sep 13 2013&Null Return, Govt Depts,Already under Audit&Random& 5\%&" %13.0gc  (`assign1') "\\" _n
+* Wave-2
+count 		if assign2==1
+local 		assign2=r(N)
+file write myfile "2&Sep 25 2014&Null Return, Govt Depts,Already under Audit&Random& 12\%&" %13.0gc  (`assign2') "\\" _n
+
+* Wave-3
+count 		if assign3==1
+local 		assign3=r(N)
+file write myfile "3&Sep 14 2015&Null Return, Govt Depts,Already under Audit&Random& 7.5\%&" %13.0gc  (`assign3' ) "\\" _n
+file write myfile "&& Steel Melters and Re-rollers&& \\"
+
+* Wave-4
+count 		if assign4==1 
+local 		assign4=r(N)
+file write myfile "4&Jan 05 2017&Already under Audit&Targeted& 7.5\%&" %13.0gc (`assign4' ) "\\" _n
+* Wave-4
+count 		if assign5==1
+local 		assign5=r(N)
+file write myfile "5&Apr 12 2018&Already under Audit&Targeted& 7.5\%&" %13.0gc (`assign5')  "\\" _n
+
+```
+Also note the use of format command inside the file write that gives me chosen format inside `.tex` file. After this, you add end part of latex code that was copied from table generator website
+```bash
+file write myfile "\bottomrule"	_n
+file write myfile "\bottomrule" _n
+file write myfile "\end{tabular}"	_n
+file		close myfile
+```
+For more details on how to use `file` command, read STATA manual at https://www.stata.com/manuals13/pfile.pdf. 
+
+
+
 ### Organization
-We already mentioned the organization among files in section 4 “Folder Organization,” but Stata .do files should also be organized within them. Here are a few tips:
+We already mentioned the organization among files in [Folder Organization](FolderOrganization) but Stata .do files should also be organized within them. Here are a few tips:
 - Readability: your code should be well documented, with comments along the way, and ideally with a short description at the beginning of the code and notes on important features or what still must be done.
 - Replicability: your code should run successfully independent of the computer it is running on. Usually this can be done by setting the common directory (e.g. DropBox or GitHub directory) at the top of the .do file, but you should be also attentive to other matters, such as whether any packages must be installed by the other users, Stata older versions, etc. It might also be useful to write globals at the beginning of the code that allows the user to decide what section of the code she wants to run.
 - You can follow the following code header as a guide:

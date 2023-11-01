@@ -1,6 +1,11 @@
-
+(GettingStarted)=
 # 1. GETTING STARTED
 
+<<<<<<< HEAD
+# 1. GETTING STARTED
+
+=======
+>>>>>>> origin/main
 ## 1.1. Introduction
 
 This document serves multiple purposes. As an onboarding guide for new research assistants, its aim is to introduce the research tools I use and how to get started with these tools. I also try to describe a standard for good research habits. As a reference manual, this document serves as a resource and first line of defense when questions arise.
@@ -32,6 +37,7 @@ Nobody really sticks to these fully, but everyone should be striving to adhere t
 1. [Dropbox](https://www.dropbox.com)
 2. [Github](https://github.com)
 3. [Github Desktop](https://desktop.github.com)
+4. [Visual Studio Code](https://code.visualstudio.com/)
 4. [VeraCrypt](https://www.veracrypt.fr/en/Home.html)
 5. [Trello](https://trello.com)
 6. [LaTeX](https://overleaf.com)
@@ -40,6 +46,7 @@ Nobody really sticks to these fully, but everyone should be striving to adhere t
 9. [Stata](https://www.stata.com)
 10. [R](https://www.r-project.org)
 11. [R Studio](https://rstudio.com)
+12. [ChatGPT](https://chat.openai.com/)
 
 
 

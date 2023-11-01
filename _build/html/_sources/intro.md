@@ -1,5 +1,7 @@
 # How to Get Stuff Done : A Handbook for Research Assistants and Coauthors
 
+[**Muhammad Bashir**](https://bashirmohammad.github.io/)
+
 [**Michael Carlos Best**](https://blogs.cuit.columbia.edu/mcb2270/)
 
 [**Luigi Caloi**](https://econ.columbia.edu/econpeople/luigi-beneduci-caloi/)
