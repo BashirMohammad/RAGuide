@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>TOOLS &#8212; My sample book</title>
+    <title>TOOLS &#8212; RA Handbook</title>
   
   
   
@@ -152,8 +152,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="RA Handbook - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="RA Handbook - Home"/>`);</script>
   
   
 </a></div>
@@ -169,7 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I GETTING STARTED</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Chapter1.html">GETTING STARTED</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Chapter1.html">1. GETTING STARTED</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II WORKFLOW</span></p>
 <ul class="nav bd-sidenav">
@@ -427,11 +427,17 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improved-text-editors">Improved Text Editors</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atom">Atom</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sublime">Sublime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code">Visual Studio Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-stata-code-in-vscode">Writing STATA Code in VSCode</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#github-integration">GitHub Integration</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stata">STATA</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#large-datasets-gtools-ftools-and-reghdfe">Large datasets: Gtools, Ftools and reghdfe</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-from-stata-to-latex-estout-texsave-regsave-file">Exporting from Stata to LaTex: estout, texsave, regsave, file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-file-command">Using File Command</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#organization">Organization</a></li>
 </ul>
 </li>
@@ -456,6 +462,7 @@ document.write(`
 <span id="id1"></span><h1>TOOLS<a class="headerlink" href="#tools" title="Permalink to this heading">#</a></h1>
 <section id="dropbox">
 <h2>Dropbox<a class="headerlink" href="#dropbox" title="Permalink to this heading">#</a></h2>
+<p>Dropbox excels at handling vast quantities of data, images, and tables, providing a swift and seamless synchronization experience, even for sizable project folders. However, its live synchronization can lead to conflicts if multiple users attempt simultaneous edits. In contrast, GitHub, with its integrated version control system, stands out for managing code and documents, allowing uploads to the cloud only when you have a finalized version ready. We currently keep our data on Dropbox, while our code, along with the final versions of images and tables, are maintained on GitHub.</p>
 </section>
 <section id="github">
 <span id="tools-github"></span><h2>Github<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h2>
@@ -485,14 +492,14 @@ This allows GitHub to work (i) incredibly fast, since it doesn’t have to acces
 <li><p>Install the program. You can find very simple instructions <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here</a>.</p></li>
 <li><p>Create an account on <a class="reference external" href="https://github.com">GitHub</a>.</p></li>
 <li><p>(Optional) set up your identity. Go to your terminal and type the following commands:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;John Doe&quot;</span>
-$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>johndoe@example.com
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git config --global user.name <span class="s2">&quot;John Doe&quot;</span>
+$ git config --global user.email johndoe@example.com
 </pre></div>
 </div>
 </li>
 </ol>
 <p>Don’t actually copy the <code class="docutils literal notranslate"><span class="pre">$</span></code> symbol, this is standard notation to let you know this command should be run in the terminal. If you need any help to understand a command, you can type the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">help</span> <span class="pre">&lt;verb&gt;</span></code>. For instance:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span>$<span class="w"> </span>git<span class="w"> </span><span class="nb">help</span><span class="w"> </span>config
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   $ git <span class="nb">help</span> config
 </pre></div>
 </div>
 <p>Most of this section’s content was a summary from <a class="reference external" href="https://git-scm.com/book/en/v2">Pro Git - Everything You Need to Know About Git</a>, one should read it for a more detailed understanding.</p>
@@ -509,14 +516,14 @@ $<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </spa
 <li><p>Open terminal</p></li>
 <li><p>Go to the directory where you want your repo to be:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/Users/username/documents
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   $ <span class="nb">cd</span> /Users/username/documents
 </pre></div>
 </div>
 <ol class="arabic simple" start="4">
 <li><p>Go to the <a class="reference external" href="https://github.com/luigicaloi/GitShortIntro">remote repo</a> click on clone or download and copy that link displayed.</p></li>
 <li><p>Then, on your terminal, clone the repository with git clone</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>clone<span class="w"> </span><span class="s2">&quot;https://github.com/luigicaloi/GitShortIntro.git&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone <span class="s2">&quot;https://github.com/luigicaloi/GitShortIntro.git&quot;</span>
 </pre></div>
 </div>
 <p>This will create a GitShortIntro directory with a working copy of the latest version of the project. It also stores a .git directory (the local repo) inside it, which is hidden. For more info, see <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">this</a>.</p>
@@ -525,13 +532,13 @@ $<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </spa
 <section id="modifying-files">
 <h3>Modifying Files<a class="headerlink" href="#modifying-files" title="Permalink to this heading">#</a></h3>
 <p>If you open the new GitShortIntro directory, you’ll see that there are only two files <a class="reference external" href="https://github.com/luigicaloi/GitShortIntro/blob/798af71a4171b743ac15b3432d9c64fa3c2c7a3a/AllReaders.tex">AllRead- ers.tex</a> and <a class="reference external" href="https://github.com/luigicaloi/GitShortIntro/blob/798af71a4171b743ac15b3432d9c64fa3c2c7a3a/Test.do">Test.do</a> and one folder “GitHub_a_Practical_Introduction”. Your task is sim- ple: open the “AllReaders.tex” file and include your name at the end of the list of all readers. Now that you have made changes to the working directory, let’s see what is your status in Git. Change the directory in the terminal for the one from your new project. For instance:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;/Users/username/documents/GitShortIntro &quot;</span><span class="w"> </span>
-<span class="w">   </span>$<span class="w"> </span>git<span class="w"> </span>status
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   $ <span class="nb">cd</span> <span class="s2">&quot;/Users/username/documents/GitShortIntro &quot;</span> 
+   $ git status
 </pre></div>
 </div>
 <p><img alt="" src="_images/GitStatus.png" /></p>
 <p>Don’t worry about the branch message yet, we’ll see what that is in section 10.5.1Git Branching. GitHub realizes that your local repo is different from your working directory, it realized that you made changes to the “AllReaders.tex” file and shows it under “Changes to be committed.” Our first goal is to make sure that your local repo also saves those changes (we’ll take care of the remote repo in the next section). You first need to tell GitHub what documents you want to save the changes in the local repo with the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span><span class="s2">&quot;AllReaders.tex&quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add <span class="s2">&quot;AllReaders.tex&quot;</span>
 </pre></div>
 </div>
 <p>Now run git status again and you’ll see:
@@ -540,14 +547,14 @@ $<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </spa
 <section id="committing-modified-files">
 <h3>Committing Modified Files<a class="headerlink" href="#committing-modified-files" title="Permalink to this heading">#</a></h3>
 <p>AllReaders.tex is now under the “Changes to be committed.” This basically means you told GitHub you want to save the changes made to it. Next, we need to “commit” those changes. Committing is telling GitHub to take a snapshot of your project in the working directory and save it to your local repository. In other words, you are saving your latest changes to the git repo. See here for more details. The command to commit changes is:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span>git<span class="w"> </span>commit<span class="w"> </span>−m<span class="w"> </span><span class="s2">&quot;A message explaining your changes to the project &quot;</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   git commit −m <span class="s2">&quot;A message explaining your changes to the project &quot;</span>
 </pre></div>
 </div>
 </section>
 <section id="unmodifying-a-modified-file">
 <h3>Unmodifying a Modified File<a class="headerlink" href="#unmodifying-a-modified-file" title="Permalink to this heading">#</a></h3>
 <p>If you accidentally modified a file, or regretted the changes, and wants to revert it back to how it was when you last committed (the local repo’s last snapshot), you can run the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$git</span><span class="w"> </span>checkout<span class="w"> </span>−<span class="w"> </span>&lt;file<span class="w"> </span>&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   <span class="nv">$git</span> checkout − &lt;file &gt;
 </pre></div>
 </div>
 <p>However, be careful, the changes you had made and not committed will be completely deleted.</p>
@@ -555,8 +562,8 @@ $<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </spa
 <section id="pushing-to-your-remotes">
 <span id="pushingremoterepo"></span><h3>Pushing to Your Remotes<a class="headerlink" href="#pushing-to-your-remotes" title="Permalink to this heading">#</a></h3>
 <p>So you have already (i) cloned all the data from the remote repo and created a local repo; (ii) mod- ified your working directory (e.g. your code) and (iii) added and committed your changes from your working directory to your local repo (the .git repository). We’ll now update your changes to the remote repo. This can be done with the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$git</span><span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>master<span class="w"> </span>Or<span class="w"> </span>more<span class="w"> </span>generally
-<span class="w">   </span><span class="nv">$git</span><span class="w"> </span>push<span class="w"> </span>&lt;remote&gt;<span class="w"> </span>&lt;branch&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   <span class="nv">$git</span> push origin master Or more generally
+   <span class="nv">$git</span> push &lt;remote&gt; &lt;branch&gt;
 </pre></div>
 </div>
 <p>“origin” is the automatic name that GitHub assigns to the remote repository. “master” is the branch in the remote repo, but don’t worry about it yet, it will make sense after we see 10.5.1 Git Branching. Git push uploads the changes from your local repo to your remote repo. Now your working directory, your local repo and your remote repo are all on the same stage.</p>
@@ -578,7 +585,7 @@ $<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </spa
 <ol class="arabic simple">
 <li><p>Change the current working directory to the desired local’s project dir.</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$cd</span><span class="w"> </span>/Users/username/newrepo
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   <span class="nv">$cd</span> /Users/username/newrepo
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
@@ -603,11 +610,11 @@ Now let’s say that you need to make changes to your project for a new submissi
 $git branch testing</p>
 <p><img alt="" src="_images/Master_Testing.png" />
 Now the two branches are pointing to the last commit (see figure 53 above). The HEAD pointer shows which branch you are currently working in your local repo. The following command switches control to the testing branch so that you can make the new changes to your project.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$git</span><span class="w"> </span>checkout<span class="w"> </span>testing
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   <span class="nv">$git</span> checkout testing
 </pre></div>
 </div>
 <p>Now if you make changes to your project and commit them, your project history will look like Figure 64. Note that the master branch is still pointing to commit C2. The good thing is that if we decide that the new ideas were bad, we can simply go back to the master branch with</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$git</span><span class="w"> </span>checkout<span class="w"> </span>master
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   <span class="nv">$git</span> checkout master
 </pre></div>
 </div>
 <p>With this, all the files on your working directory go back to how they were when you made the last push in your master branch (C2).
@@ -619,14 +626,14 @@ Another scenario that illustrates why it is good to make new changes in new bran
 <p>Following from last subsection’s example, let’s suppose that while you made changes to the ‘test- ing’ branch, someone else had to make urgent changes to the master branch. For that, this person created a ‘hotfix’ branch. The history of your project now looks like <a class="reference external" href="https://git-scm.com/book/en/v2">this</a>
 <img alt="" src="_images/HotFix.png" />
 Now let’s say we finished the changes in the hotfix branch and we are ready to merge the master branch with the hotfix branch. This can be done with the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$git</span><span class="w"> </span>checkout<span class="w"> </span>master<span class="w"> </span>
-<span class="w">   </span><span class="nv">$git</span><span class="w"> </span>merge<span class="w"> </span>hotfix
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   <span class="nv">$git</span> checkout master 
+   <span class="nv">$git</span> merge hotfix
 </pre></div>
 </div>
 <p>And we would see the following message:
 <img alt="" src="_images/MergeMessage.png" />
 Because we didn’t make any changes to the master branch and C4 from the hotfix branch was directly ahead of C2, GitHub can simply “fast-forward” the master branch and change the pointer from C2 to C4. Since the hotfix branch and the master branch now point to the same commit, we can delete the hotfix branch:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$git</span><span class="w"> </span>branch<span class="w"> </span>−d<span class="w"> </span>hotfix
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   <span class="nv">$git</span> branch −d hotfix
 </pre></div>
 </div>
 </section>
@@ -634,7 +641,7 @@ Because we didn’t make any changes to the master branch and C4 from the hotfix
 <h4>Merging conflicts<a class="headerlink" href="#merging-conflicts" title="Permalink to this heading">#</a></h4>
 <p>Things are a bit more complicated when you are trying to merge two branches that are not directly related. For instance, if some changes made in the hotfix branch are in conflict with changes made in the testing branch, GitHub won’t be able to complete the merge and will ask your help to decide which version it should keep for that specific change.
 The first step would be to try merging both branches.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="nv">$git</span><span class="w"> </span>merge<span class="w"> </span>testing
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>   <span class="nv">$git</span> merge testing
 </pre></div>
 </div>
 <p>We would then check in which files there was a merge conflict with git status
@@ -750,9 +757,27 @@ usability of Sublime, getting to know them will speed up a lot of the coding in 
 </ul>
 <p>Sublime can be pretty good with <a class="reference external" href="http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html">shortcuts</a>. The most useful for me from the list are Command J to transform multiple lines into a single one and the “split window” command. On a similar note, Sublime allows for <a class="reference external" href="https://www.sublimetext.com/docs/column_selection.html">column selection</a>, which can be particularly useful for selecting and writing at multiple lines.</p>
 </section>
+<section id="visual-studio-code">
+<h3>Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permalink to this heading">#</a></h3>
+<p>Visual Studio Code (VSCode) is a versatile and lightweight code editor developed by Microsoft, available for Windows, macOS, and Linux. It supports a wide array of programming languages and comes with a rich set of features including syntax highlighting, IntelliSense (auto-completion of code), debugging support, and embedded Git control. Users can customize its functionality and appearance with extensions, enhancing its capabilities to suit their specific workflow and preferences. Its user-friendly interface, combined with powerful coding tools, makes VSCode a popular choice among developers for writing, navigating, and debugging code efficiently. Additionally, its integration with version control systems and a variety of programming languages streamlines the development process, making it a comprehensive tool for both beginners and experienced programmers. Below we describe some important uses of VSCode.</p>
+<p>You can download VSCode from <a class="reference external" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>. Among its many benefits, you can open an entire folder inside it and see all files including pdfs, images, markdown, tex, stata dofiles, Jupyter Notebook, and R files. For instance, below is an example of repository of this book open in VSCode:
+<img alt="" src="_images/VSCodeExample.png" /></p>
+<p>Once you install VSCode, you will first need to install some important extensions that will help you do different tasks. Below we describe some important tasks you can do inside VSCode and their extensions.</p>
+<section id="writing-stata-code-in-vscode">
+<h4>Writing STATA Code in VSCode<a class="headerlink" href="#writing-stata-code-in-vscode" title="Permalink to this heading">#</a></h4>
+<p>First in order to run STATA inside VSCode, you need to install three extensions <code class="docutils literal notranslate"><span class="pre">Stata</span> <span class="pre">Enhanced</span></code>, <code class="docutils literal notranslate"><span class="pre">Stata</span> <span class="pre">language</span></code> and <code class="docutils literal notranslate"><span class="pre">stataRun</span></code>. Importantly, follow details at <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=Yeaoh.stataRun">https://marketplace.visualstudio.com/items?itemName=Yeaoh.stataRun</a> on how to set up STATA on VSCode. Note that you need to go to shortcuts of the VSCode and then search <code class="docutils literal notranslate"><span class="pre">stata</span> <span class="pre">run</span></code> and then choose your shortcut key that sends VSCode to STATA. When you need to write a dofile in VSCode, simply open a new file and while saving choose its extension <code class="docutils literal notranslate"><span class="pre">.do</span></code>. You will notice that with <code class="docutils literal notranslate"><span class="pre">Stata</span> <span class="pre">Enhanced</span></code>, the autocompletion and auto-generation of comments on your STATA code will be super accurate.</p>
+</section>
+<section id="github-integration">
+<h4>GitHub Integration<a class="headerlink" href="#github-integration" title="Permalink to this heading">#</a></h4>
+<p>First you go to bottom left corner and sign in your GitHub on VSCode. It will take you to GitHub website and you just need to approve it. Once you have GitHub connected with VSCode, you can push/pull the same way you do with GitHub Desktop by going to the third icon on the left called <code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">Control</span></code>. This functionality of VSCode essentially replaces GitHub Desktop as you no longer need a separate app tp push or pull from GitHub cloud.
+<img alt="" src="_images/GithubonVSCode.png" />
+Next you need to install extension for GitHub Copilot that lets you chat with AI bot from inside the CSCode. This is similar to ChatGPT and is free on GitHub education pro account. If you have an <code class="docutils literal notranslate"><span class="pre">edu</span></code> email, request a free GitHub pro account at <a class="reference external" href="https://education.github.com/pack">https://education.github.com/pack</a>. After this you need to request access to GitHub copilot at <a class="github reference external" href="https://github.com/features/copilot">features/copilot</a>. To learn more details about how to use this copilot, read <a class="reference external" href="https://paulgp.substack.com/p/setting-up-github-copilot-and-vscode">https://paulgp.substack.com/p/setting-up-github-copilot-and-vscode</a>. Below is an example chat with Copilot:</p>
+<p><img alt="" src="_images/CopilotExample.png" /></p>
+</section>
+</section>
 </section>
 <section id="stata">
-<h2>STATA<a class="headerlink" href="#stata" title="Permalink to this heading">#</a></h2>
+<span id="tools-stata"></span><h2>STATA<a class="headerlink" href="#stata" title="Permalink to this heading">#</a></h2>
 <section id="large-datasets-gtools-ftools-and-reghdfe">
 <h3>Large datasets: Gtools, Ftools and reghdfe<a class="headerlink" href="#large-datasets-gtools-ftools-and-reghdfe" title="Permalink to this heading">#</a></h3>
 <p>If you are working with large datasets, the <a class="reference external" href="https://gtools.readthedocs.io/en/latest/">Gtools</a> and <a class="reference external" href="https://github.com/sergiocorreia/ftools">Ftools</a> are community-contributed packages that perform common Stata commands much quicker, such as collapse, reshape, merge egen and more. Gtools is generally even quicker than the Ftools, so if the same command is availble on both packages I usually go with the Gtools option.</p>
@@ -768,9 +793,80 @@ usability of Sublime, getting to know them will speed up a lot of the coding in 
 (<a class="reference external" href="https://www.nickeubank.com/exporting-results-stata-latex/">https://www.nickeubank.com/exporting-results-stata-latex/</a>).</p></li>
 </ul>
 </section>
+<section id="using-file-command">
+<h3>Using File Command<a class="headerlink" href="#using-file-command" title="Permalink to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">file</span></code> is most flexible STATA command to write into a file including word, excel and Latex. This is specifically useful when you need to create a table with very complex stracture. Consider for example you want to create following table:
+<img alt="" src="_images/SummaryStatsTable.png" />
+First go to <a class="reference external" href="https://www.tablesgenerator.com/">https://www.tablesgenerator.com/</a> and there you design your table as you would do in excel. Then, you choose your format of table such as booktabs and then generate Latex code for that table. Now you would have code for empty table and you go into STATA and start writing dofile by first loading the data</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>clear all
+version <span class="m">16</span>
+**++++++ THIS CODE GENERATES SUMMARY STATISTICS OF AUDIT ASSIGNMENT FOR PAKISTAN AUDIT PROJECT+++++ **
+* DATE: 5th FEBRUARY, <span class="m">2023</span>
+
+*** Reading audit data
+use				<span class="s2">&quot;</span><span class="si">${</span><span class="nv">project_data</span><span class="si">}</span><span class="s2">/ParametricAudits_RiskScore_v3.dta&quot;</span>, clear
+duplicates drop regno, force				// Only keep one line per firm as we want to count firms.
+</pre></div>
+</div>
+<p>Now you use file command and start writing <code class="docutils literal notranslate"><span class="pre">.tex</span></code> code for your table that was generated from table generator website</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>** Define Latex Code <span class="k">for</span> the Summary Statistics Table
+capture		file close myfile
+file 		open myfile using <span class="s2">&quot;</span><span class="si">${</span><span class="nv">project_tabs</span><span class="si">}</span><span class="s2">/AuditDescriptives.tex&quot;</span>, write replace
+file 		write myfile <span class="s2">&quot;\setlength{\arrayrulewidth}{0.5mm}&quot;</span> _n
+
+file		write myfile <span class="s2">&quot;\begin{tabular}{@{}cccccc@{}}&quot;</span> _n
+file		write myfile <span class="s2">&quot;\toprule&quot;</span> _n
+file		write myfile <span class="s2">&quot;\toprule&quot;</span> _n
+file 		write myfile <span class="s2">&quot;\multirow{2}{*}{Audit} &amp; \multirow{2}{*}{Ballot Date} &amp; \multirow{2}{*}{Exclusions} &amp; \multicolumn{3}{c}{Audits Assigned} \\ &quot;</span> _n
+file 		write myfile <span class="s2">&quot;\cmidrule(l){4-6}&quot;</span>	_n
+file 		write myfile <span class="s2">&quot;Wave &amp;Date &amp; &amp; Mode   &amp; Statutory Rate   &amp; Number  \\ &quot;</span> _n
+
+file 		write myfile <span class="s2">&quot;\midrule &quot;</span>	_n
+// file 		write myfile <span class="s2">&quot; &amp;   &amp; &amp; Mode   &amp; Statuary Rate   &amp; Number   \\&quot;</span> _n
+file 		write myfile <span class="s2">&quot;(1) &amp; (2)  &amp; (3) &amp; (4)    &amp; (5)&amp; (6)    \\&quot;</span>		_n
+file		write myfile <span class="s2">&quot;\midrule&quot;</span> _n
+</pre></div>
+</div>
+<p>Here <code class="docutils literal notranslate"><span class="pre">_n</span></code> defines new line for Latex Code. Whatever comes after <code class="docutils literal notranslate"><span class="pre">file</span> <span class="pre">write</span> <span class="pre">myfile</span></code> inside the quotes will be written into the tex file called <code class="docutils literal notranslate"><span class="pre">AuditDescriptives.tex</span></code>. Now you need to fill in summary statistics into this and we usually use locals to store statistics before writing onto the <code class="docutils literal notranslate"><span class="pre">.tex</span></code> file such as</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>***		Start populating the table
+* Wave-1
+count 		if assign1==1 
+local 		assign1= r(N)
+file write myfile &quot;1&amp;Sep 13 2013&amp;Null Return, Govt Depts,Already under Audit&amp;Random&amp; 5\%&amp;&quot; %13.0gc  (`assign1&#39;) &quot;\\&quot; _n
+* Wave-2
+count 		if assign2==1
+local 		assign2=r(N)
+file write myfile &quot;2&amp;Sep 25 2014&amp;Null Return, Govt Depts,Already under Audit&amp;Random&amp; 12\%&amp;&quot; %13.0gc  (`assign2&#39;) &quot;\\&quot; _n
+
+* Wave-3
+count 		if assign3==1
+local 		assign3=r(N)
+file write myfile &quot;3&amp;Sep 14 2015&amp;Null Return, Govt Depts,Already under Audit&amp;Random&amp; 7.5\%&amp;&quot; %13.0gc  (`assign3&#39; ) &quot;\\&quot; _n
+file write myfile &quot;&amp;&amp; Steel Melters and Re-rollers&amp;&amp; \\&quot;
+
+* Wave-4
+count 		if assign4==1 
+local 		assign4=r(N)
+file write myfile &quot;4&amp;Jan 05 2017&amp;Already under Audit&amp;Targeted&amp; 7.5\%&amp;&quot; %13.0gc (`assign4&#39; ) &quot;\\&quot; _n
+* Wave-4
+count 		if assign5==1
+local 		assign5=r(N)
+file write myfile &quot;5&amp;Apr 12 2018&amp;Already under Audit&amp;Targeted&amp; 7.5\%&amp;&quot; %13.0gc (`assign5&#39;)  &quot;\\&quot; _n
+
+</pre></div>
+</div>
+<p>Also note the use of format command inside the file write that gives me chosen format inside <code class="docutils literal notranslate"><span class="pre">.tex</span></code> file. After this, you add end part of latex code that was copied from table generator website</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>file write myfile <span class="s2">&quot;\bottomrule&quot;</span>	_n
+file write myfile <span class="s2">&quot;\bottomrule&quot;</span> _n
+file write myfile <span class="s2">&quot;\end{tabular}&quot;</span>	_n
+file		close myfile
+</pre></div>
+</div>
+<p>For more details on how to use <code class="docutils literal notranslate"><span class="pre">file</span></code> command, read STATA manual at <a class="reference external" href="https://www.stata.com/manuals13/pfile.pdf">https://www.stata.com/manuals13/pfile.pdf</a>.</p>
+</section>
 <section id="organization">
 <h3>Organization<a class="headerlink" href="#organization" title="Permalink to this heading">#</a></h3>
-<p>We already mentioned the organization among files in section 4 “Folder Organization,” but Stata .do files should also be organized within them. Here are a few tips:</p>
+<p>We already mentioned the organization among files in <a class="reference internal" href="Chapter2.html#folderorganization"><span class="std std-ref">Folder Organization</span></a> but Stata .do files should also be organized within them. Here are a few tips:</p>
 <ul class="simple">
 <li><p>Readability: your code should be well documented, with comments along the way, and ideally with a short description at the beginning of the code and notes on important features or what still must be done.</p></li>
 <li><p>Replicability: your code should run successfully independent of the computer it is running on. Usually this can be done by setting the common directory (e.g. DropBox or GitHub directory) at the top of the .do file, but you should be also attentive to other matters, such as whether any packages must be installed by the other users, Stata older versions, etc. It might also be useful to write globals at the beginning of the code that allows the user to decide what section of the code she wants to run.</p></li>
@@ -903,11 +999,17 @@ If you’re trying to make interactive maps that you can pan around and zoom int
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#improved-text-editors">Improved Text Editors</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atom">Atom</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sublime">Sublime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-studio-code">Visual Studio Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-stata-code-in-vscode">Writing STATA Code in VSCode</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#github-integration">GitHub Integration</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stata">STATA</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#large-datasets-gtools-ftools-and-reghdfe">Large datasets: Gtools, Ftools and reghdfe</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exporting-from-stata-to-latex-estout-texsave-regsave-file">Exporting from Stata to LaTex: estout, texsave, regsave, file</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-file-command">Using File Command</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#organization">Organization</a></li>
 </ul>
 </li>
@@ -931,7 +1033,7 @@ If you’re trying to make interactive maps that you can pan around and zoom int
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Bashir, Best and Caloi
 </p>
 
   </div>

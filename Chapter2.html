@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>WORKFLOW &#8212; My sample book</title>
+    <title>WORKFLOW &#8212; RA Handbook</title>
   
   
   
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="General Principles" href="Chapter3.html" />
-    <link rel="prev" title="GETTING STARTED" href="Chapter1.html" />
+    <link rel="prev" title="1. GETTING STARTED" href="Chapter1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -152,8 +152,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="RA Handbook - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="RA Handbook - Home"/>`);</script>
   
   
 </a></div>
@@ -169,7 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part I GETTING STARTED</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Chapter1.html">GETTING STARTED</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Chapter1.html">1. GETTING STARTED</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Part II WORKFLOW</span></p>
 <ul class="current nav bd-sidenav">
@@ -387,8 +387,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-organization">Folder Organization</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-folders-dropbox-vs-github">Assignment Folders Dropbox vs Github</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make-files">Make Files</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-directory">Example Directory</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make-files">Make Files</a></li>
 </ul>
 </li>
 </ul>
@@ -411,20 +411,93 @@ document.write(`
 <section id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this heading">#</a></h2>
 <section id="folder-organization">
-<h3>Folder Organization<a class="headerlink" href="#folder-organization" title="Permalink to this heading">#</a></h3>
+<span id="folderorganization"></span><h3>Folder Organization<a class="headerlink" href="#folder-organization" title="Permalink to this heading">#</a></h3>
 <section id="assignment-folders-dropbox-vs-github">
 <h4>Assignment Folders Dropbox vs Github<a class="headerlink" href="#assignment-folders-dropbox-vs-github" title="Permalink to this heading">#</a></h4>
 <p>The difference between Github and Dropbox will become clearer after <a class="reference internal" href="Chapter5.html#tools-github"><span class="std std-ref">Github</span></a>, but we should note a few things beforehand. The two are fundamentally different in their purposes: Dropbox is great at storing huge amounts of data in the cloud, while Github excels at storing multiple versions of your code. In practice, this means that you will have a Dropbox folder with all your data and one Github folder with all your codes. Your plots, pictures, and tables can go in either.</p>
-<p>Currently, we prefer to create an organization in GitHub that manages entire project. You can have one repository for analysis and then a final repository called writing that only stores your final tex code for presentation, paper, final graphs and tables. We will explain this in detail in <span class="xref myst">Code</span> and <a class="reference internal" href="Chapter5.html#tools"><span class="std std-ref">Tools</span></a>.</p>
-<p>&lt;! Add here new a bit on new details–&gt;</p>
-</section>
-<section id="make-files">
-<h4>Make Files<a class="headerlink" href="#make-files" title="Permalink to this heading">#</a></h4>
-<p>Each folder should have a “main” file that calls the other scripts/functions from the folder. A folder can quickly grow into having multiple files, and the master file should help one to figure out the connections between them, e.g., in what order each file should be called. An example in Stata:</p>
-<p><img alt="alt text" src="_images/MainFile.png" /></p>
+<p>Currently, we prefer to create an organization in GitHub that manages entire project. You can have one repository for analysis and then a final repository called writing that only stores your final tex code for presentation, paper draft, final graphs and tables. We will explain this in detail in <span class="xref myst">Code</span> and <a class="reference internal" href="Chapter5.html#tools"><span class="std std-ref">Tools</span></a> the best practices of creating all this output.</p>
 </section>
 <section id="example-directory">
 <h4>Example Directory<a class="headerlink" href="#example-directory" title="Permalink to this heading">#</a></h4>
+<p>We recommend adopting the directory structure outlined by Gentzkow &amp; Shapiro in their handbook, <a class="reference external" href="https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf">Code and Data for the Social Sciences</a>. This structure is well-suited for comprehensive empirical research projects. Below is an example of one of our projects that follows that stracture.</p>
+<p><img alt="alt text" src="_images/DirExample.png" /></p>
+<p>These different folders serve following purpose:</p>
+<ol class="arabic simple">
+<li><p><strong>Comments:</strong> This folder serves as a repository for feedback and insights gathered throughout the course of your project, sourced from interactions with fellow academics. This could encompass input received during seminars or workshops, as well as informal discussions with colleagues within your department. In the field of economics, actively seeking and integrating feedback from peers is a vital practice for refining and enhancing the quality of your work, ultimately contributing to the production of a well-polished paper.</p></li>
+<li><p><strong>Context:</strong> This folder outlines your project’s motivation and research design. It contains detailed background information on your data and the policy you are studying. For instance, in the picture folder above, we study randomized Valued Added Tax audits in Pakistan and our context folder stores details such as audit policy documents and how audits were conducted. For example, in the displayed directory structure, the project investigates randomized Value Added Tax (VAT) audits in Pakistan. The “Context” folder, therefore, contains essential documents like audit policy materials and descriptions of audit procedures, ensuring all crucial background and methodological details are comprehensively documented and easily accessible.</p></li>
+<li><p><strong>Empirics:</strong> This central folder is designated for storing data and, if applicable, code (especially when using Dropbox for code storage). It typically encompasses three subfolders: Build, Analysis, and Log.</p>
+<ul class="simple">
+<li><p><strong>Build:</strong> This subfolder is further divided into three categories:</p>
+<ul>
+<li><p><strong>Input:</strong> Here, you store all the raw data collected for your project.</p></li>
+<li><p><strong>Code:</strong> This is where the code for preparing the final dataset, ready for analysis, is kept. Tasks such as merging multiple files, standardizing variable names, and cleaning strings are performed to produce a clean and analyzable dataset.</p></li>
+<li><p><strong>Output:</strong> The final, cleaned dataset is stored here, ready for further analysis.</p></li>
+</ul>
+</li>
+<li><p><strong>Analysis:</strong> Within this subfolder, you’ll find two more categories:</p>
+<ul>
+<li><p><strong>Code:</strong> All code related to your analysis is stored here.</p></li>
+<li><p><strong>Output:</strong> This contains folders for storing visualizations (Pictures) and data tables. We provide guidance in the <span class="xref myst">Tools</span> section on how to write STATA code that directly produces LaTeX files for your tables.</p></li>
+</ul>
+</li>
+<li><p><strong>Log:</strong> This subfolder is used to store log files, although its specific contents and organization might vary depending on your project’s needs.</p></li>
+</ul>
+</li>
+<li><p><strong>Funding:</strong> Funding folders tracks your funding resources and applications.</p></li>
+<li><p>Then you can have extra folders depending on your needs such as Presentation folder that store Latex code for your presentations, Writing folder stores Latex code for the draft of your paper and Readings folder stores all papers that are relevant to your project.</p></li>
+</ol>
+<p>If you store your code on GitHub, you can create further folders for different types of codes such as</p>
+<p><img alt="" src="_images/GitHhubFolders.png" /></p>
+<p>Once you create a this folder stracture, you should write a master file that stores paths of these foldes for all of your co-authors. This approach eliminates the need to manually configure paths, enabling anyone to generate tables or figures by simply running the master file, followed by any other code file, directly on their computer. Below, you will find the STATA code for the master file used in our Pakistan Audits Project.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>version <span class="m">16</span>
+<span class="nb">set</span> more off
+
+***************************************************************************************************
+* THIS FILE SETS ALL THE PATHS YOU NEED FOR THE PAKISTAN AUDIT PROJECT
+* TO ADD YOURSELF, ASK STATA WHAT YOUR USERNAME IS <span class="o">(</span>TYPE di <span class="s2">&quot;`c(username)&#39;&quot;</span><span class="o">)</span> AND
+* ADD ANOTHER <span class="sb">`</span>ELSE IF<span class="s1">&#39; CONDITION BELOW THE OTHERS</span>
+<span class="s1">***************************************************************************************************</span>
+
+<span class="s1">/* PRELIMINARIES */</span>
+<span class="s1">*------------------</span>
+
+<span class="s1">if &quot;`c(username)&#39;</span><span class="s2">&quot; == &quot;</span>michaelbest<span class="s2">&quot; {</span>
+<span class="s2">	global github &quot;</span>/Users/michaelbest/Documents/GitHub/PakistanAudits/<span class="s2">&quot;</span>
+<span class="s2">	global dropbox &quot;</span>/Users/michaelbest/Dropbox/Pakistan Audit/<span class="s2">&quot;</span>
+<span class="s2">} </span>
+<span class="s2">else if &quot;</span><span class="sb">`</span>c<span class="o">(</span>username<span class="o">)</span><span class="s1">&#39;&quot; == &quot;mb5061&quot; {</span>
+<span class="s1">	global github &quot;/Users/mb5061/Documents/GitHub/PakistanAudits&quot;</span>
+<span class="s1">	global dropbox &quot;/Users/mb5061/Library/CloudStorage/Dropbox/Pakistan Audit&quot;</span>
+<span class="s1">} </span>
+<span class="s1">else if &quot;`c(username)&#39;</span><span class="s2">&quot; == &quot;</span>muhammadbashir<span class="s2">&quot; {</span>
+<span class="s2">	global github &quot;</span>/Users/muhammadbashir/Documents/GitHub/PakistanAudits<span class="s2">&quot;</span>
+<span class="s2">	global dropbox &quot;</span>/Users/muhammadbashir/Dropbox <span class="o">(</span>Personal<span class="o">)</span>/Pakistan Audit<span class="s2">&quot;</span>
+<span class="s2">} </span>
+<span class="s2">else if &quot;</span><span class="sb">`</span>c<span class="o">(</span>username<span class="o">)</span><span class="s1">&#39;&quot; == &quot;RBTG V2&quot; {</span>
+<span class="s1">	global github &quot;/Users/RBTG V2/Documents/GitHub/PakistanAudits/&quot;</span>
+<span class="s1">	global dropbox &quot;/Users/RBTG V2/Dropbox/Pakistan Audit/&quot;</span>
+<span class="s1">}</span>
+<span class="s1">else {</span>
+<span class="s1">	di _n as error &quot;YOU DON&#39;</span>T SEEM TO BE ONE OF THE USERS LISTED, PLEASE CHECK YOUR C<span class="o">(</span>USERNAME<span class="o">)</span><span class="s2">&quot; _n</span>
+<span class="s2">}</span>
+<span class="s2">	</span>
+<span class="s2">global project_code	&quot;</span><span class="si">${</span><span class="nv">github</span><span class="si">}</span>/Code<span class="s2">&quot;</span>
+<span class="s2">global project_data &quot;</span><span class="si">${</span><span class="nv">dropbox</span><span class="si">}</span>/Empirics/Build/Output<span class="s2">&quot;</span>
+<span class="s2">global project_pics &quot;</span><span class="si">${</span><span class="nv">dropbox</span><span class="si">}</span>/Empirics/Analysis/Output/Pictures<span class="s2">&quot;</span>
+<span class="s2">global project_tabs &quot;</span><span class="si">${</span><span class="nv">dropbox</span><span class="si">}</span>/Empirics/Analysis/Output/Tables<span class="s2">&quot;</span>
+<span class="s2">global project_log	&quot;</span><span class="si">${</span><span class="nv">github</span><span class="si">}</span>/Logs<span class="s2">&quot;</span>
+</pre></div>
+</div>
+<p>This file defines STATA globals storing paths to all important folders. If I want to read final cleaned data that is stored in output folder inside build, I would write</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>use     <span class="s2">&quot;</span><span class="nv">$project_data</span><span class="s2">/PakAudit.dta&quot;</span>, clear
+</pre></div>
+</div>
+<p>Note that you use <code class="docutils literal notranslate"><span class="pre">$</span></code> sign to refer to globals inside any Do file. For more details on globals in STATA, read <a class="reference external" href="https://www.stata.com/manuals/pmacro.pdf">this</a> manual on STATA website.</p>
+</section>
+<section id="make-files">
+<h4>Make Files<a class="headerlink" href="#make-files" title="Permalink to this heading">#</a></h4>
+<p>Once you reach towards final stages of your project, each folder should have a “main” file that calls the other scripts/functions from the folder. A folder can quickly grow into having multiple files, and the master file should help one to figure out the connections between them, e.g., in what order each file should be called. An example in Stata:</p>
+<p><img alt="alt text" src="_images/MainFile.png" /></p>
 <p>Beyond the “master code” already mentioned, ideally, a code directory would contain a “ReadMe.pdf” that describes briefly the codes and their connection, as well as the conclusions met and the main evidence found. Even though Github stores all the versions of our code, it is useful to keep at least the last version of the code in an “Archive” folder, to avoid going through the different versions of Git. If you use generic auxiliary functions in many of your codes, they should go in an “AuxFunctions” folder. The following picture illustrates an example directory:</p>
 <p><img alt="alt text" src="_images/ExampleDir.png" /></p>
 </section>
@@ -474,7 +547,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">GETTING STARTED</p>
+        <p class="prev-next-title">1. GETTING STARTED</p>
       </div>
     </a>
     <a class="right-next"
@@ -504,8 +577,8 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-organization">Folder Organization</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#assignment-folders-dropbox-vs-github">Assignment Folders Dropbox vs Github</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make-files">Make Files</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-directory">Example Directory</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#make-files">Make Files</a></li>
 </ul>
 </li>
 </ul>
@@ -526,7 +599,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Bashir, Best and Caloi
 </p>
 
   </div>
